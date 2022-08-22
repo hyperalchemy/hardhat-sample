@@ -46,7 +46,9 @@ contract Web3RSVP {
                 address(this),
                 eventTimestamp,
                 deposit,
-                maxCapacity
+                maxCapacity,
+    //Come up with a different way to get a unique eventID hash for each event - I added the block number
+                block.difficulty
             )
         );
 
